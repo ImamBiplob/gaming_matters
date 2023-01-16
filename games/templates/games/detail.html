@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {%block content%}
+<h1>Game Details</h1>
+<dl>
+  <dt>Game Name</dt>
+  <dd>{{game.name}}</dd>
+  <dt>Type</dt>
+  <dd>{{game.type}}</dd>
+  <dt>Release Year</dt>
+  <dd>{{game.release_year}}</dd>
+  <dt>Developer</dt>
+  <dd>{{game.developer}}</dd>
+  <dt>Platform</dt>
+  <dd>{{game.platform}}</dd>
+  <dt>Price</dt>
+  <dd>{{game.price}}</dd>
+</dl>
+{%endblock%}

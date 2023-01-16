@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Available Games</h1>
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Game Name</th>
+      <th>Type</th>
+      <th>Release Year</th>
+      <th>Developer</th>
+      <th>Platform</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for game in games %}
+    <tr>
+      <td>
+        <a href="{% url 'games:detail' game.id%}">{{game.name}}</a>
+      </td>
+      <td>{{game.type}}</td>
+      <td>{{game.release_year}}</td>
+      <td>{{game.developer}}</td>
+      <td>{{game.platform}}</td>
+      <td>{{game.price}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}
