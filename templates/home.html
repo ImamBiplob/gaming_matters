@@ -1,7 +1,11 @@
 {% extends 'base.html'%} {%block content%}
-<h1 class=".text-info">
-  Hello Gamer, we know gaming matters. Buy games at a exclusive rate from us
-</h1>
-<a href="{% url 'games:index' %}"> Click to see available games</a>
+
+  <div class="m-5 bg-gradient text-dark-emphasis rounded-3 shadow text-center justify-content-center ">
+    <h1 class="p-3">
+      Hello Gamer, we know gaming matters. Buy games at a exclusive rate from us
+    </h1>
+
+    <a href="{% url 'games:index' %}" class="btn btn-dark my-3 shadow-sm"> Click to see available games</a>
+  </div>
 
 {%endblock%}
